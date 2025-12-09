@@ -1,0 +1,22 @@
+**const nums = [1,2,3,4];
+
+
+1 :- Explain the purpose of map(), filter(), and reduce() with examples
+
+1=> map()    Create a new copy of the array after applying a function to each element
+const doubled = nums.map(n => n*2); 
+
+
+2=> filter() Returns a new array with elements that pass a condition
+const evens = nums.filter(n => n % 2 === 0); 
+
+
+3=> reduce() Reduces an array to a single value using an accumulator
+const sum = nums.reduce((acc, n) => acc + n, 0); 
+
+
+
+2 :- What do you know about Destructuring
+
+A quick way to get values ​​from an array or object into variables without writing much
+const [a,b,c] = nums; // a=1, b=2, c=3

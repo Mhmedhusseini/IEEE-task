@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Space Mono', monospace;
+    background: hsl(185, 41%, 84%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.box-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    max-width: 900px;
+    width: 100%;
+    background: #fff;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.field,
+#custom-tip {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 20px;
+    text-align: right;
+    background: hsl(189, 41%, 97%);
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+.field:focus {
+    border: 2px solid hsl(172, 67%, 45%);
+    outline: none;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: hsl(184, 14%, 56%);
+}
+
+.tip-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.t-btn {
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    background: hsl(183, 100%, 15%);
+    color: #fff;
+    cursor: pointer;
+}
+
+.t-btn:hover,
+.t-btn.active {
+    background: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+}
+
+.results-area {
+    background: hsl(183, 100%, 15%);
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.output-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.labels h4 {
+    color: #fff;
+}
+
+.per-person-text {
+    font-size: 14px;
+    color: hsl(184, 14%, 56%);
+}
+
+.amount-display {
+    font-size: 38px;
+    font-weight: bold;
+    color: hsl(172, 67%, 45%);
+}
+
+.reset-btn-style {
+    width: 100%;
+    padding: 15px;
+    font-size: 22px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 30px;
+    background: hsl(172, 67%, 45%);
+    cursor: pointer;
+}
+
+.reset-btn-style:disabled {
+    opacity: 0.36;
+    cursor: not-allowed;
+}
+
+.error-text {
+    font-size: 14px;
+    color: #E17457;
+}
